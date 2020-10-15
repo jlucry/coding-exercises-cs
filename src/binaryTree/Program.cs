@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace binaryTree
 {
@@ -17,9 +18,34 @@ namespace binaryTree
             Node<int> child5 = new Node<int>(12);
             Node<int> child6 = new Node<int>(16);
             child2.SetChildren(child5, child6);
-        
-            
 
+            Console.WriteLine("InOrder traversal");
+            List<int> results = Traversals.InOrder(root);
+
+            foreach(int result in results)
+            {
+                Console.Write(result + " ");
+            }    
+
+            Console.WriteLine();
+            Console.WriteLine("PreOrder traversal");
+
+            results = Traversals.PreOrder(root);
+
+            foreach(int result in results)
+            {
+                Console.Write(result + " ");
+            }  
+
+            Console.WriteLine();
+            Console.WriteLine("PostOrder traversal");
+            
+            results = Traversals.PostOrder(root);
+
+            foreach(int result in results)
+            {
+                Console.Write(result + " ");
+            } 
         }
     }
 }
