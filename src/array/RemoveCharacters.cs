@@ -3,6 +3,11 @@ using System.Text;
 
 namespace array
 {
+    /// <summary>
+    /// (78) Given two strings, how do you delete characters contained in the second string from the first string?
+    /// For example, if all characters in the string "aeiou" are deleted from the string "We are students.",
+    /// the result is "W r stdnts.".
+    /// </summary>
     public static class RemoveCharacters
     {
         public static string RunEnhanced(string source, string letters)

@@ -3,6 +3,10 @@ using System.Text;
 
 namespace array
 {
+    /// <summary>
+    /// (79) Please implement a function to delete all duplicated characters in a string and keep only the first occurrence of each character left.
+    /// For example, if the input is string "google", the result after deletion is "gole".
+    /// </summary>
     public static class DeduplicateCharacters
     {
         public static string RunBasic(string source)
